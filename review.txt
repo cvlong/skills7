@@ -1,0 +1,54 @@
+Recursion
+
+    1. Recursion is when a function calls itself. Recursion is similar to nested dolls, in that each time the function calls itself, it pops open a doll to reveal the next doll. When the function reaches the base case condition, the innermost dolls, then the dolls are put back together in reverse order.
+    2. In a recursive function, it's necessary to have a base case (or a "degenerate case"), a condition that indicates when to stop calling instances of the recursive function and get out of the recursive loop. It's good practice to explicitly state the base case at the beginning of your function.
+
+Graphs
+
+    1. A graph is a data structure comprised of non-hierarchical nodes that are connected by edges; two nodes are adjacent if they share an edge. Edges may carry an optional weight, or extra information about the edge, that will affect the final algorithm. In a non-directed graph, nodes can be connected even if they are not adjacent to each other (sharing an edge), because you can navigate between nodes via edges / through their adjacencies. In a directed graph, one node will point to other node(s), which are its dependencies.
+    2. Graphs differ from trees because they can contain loops, whereas trees only branch in one direction (trees are a acyclic graphs). Additionally, relationships in a graph can be directed or non-directed, and a graph's node can be dependent on more than one 'parent' node. Trees are inherently hierarchical data structures because each child can have only one parent.
+    3. Graphs are useful for modeling relationships between things - like a network of friends + suggested friends on Facebook.
+
+Performance of Different Data Structures
+
+    Fill in the missing spots in the chart with the correct runtimes. Do this by reasoning through how the data structures work, NOT by looking up the solution. Add-R means add to the right/end/top and Add-L means add to the left/beginning. There are Xs in the spots where that operation doesn’t make sense for that data structure (for instance, you can’t index a Stack, or pop from the end of a Queue). We’ve provided the first few answers for you.
+
+    Fill in the runtimes for the following actions for the table below:
+
+    Data Structure                  Index   Search  Add-R   Add-L   Pop-L   Pop-R
+    Python List (Array)             O(1)    O(n)    O(1)    O(n)    O(n)    O(1)
+    Linked List                     O(n)    O(n)    O(1)    O(1)    O(1)    O(n)     
+    Doubly-Linked List              O(n)    O(n)    O(1)    O(1)    O(1)    O(1)
+    Queue (as Array)                -       -       O(1)    -       O(n)    -
+    Queue (as LL or DLL)            -       -       O(1)    -       O(1)    -
+    Stack (as Array, LL, or DLL)    -       -       O(1)    -       -       O(1)
+    Deque (as DLL)                  -       -       O(1)    O(1)    O(1)    O(1)     
+        
+        Index: Find an item in the structure when you know its position
+        Search: Find an item in the structure when you know its data
+        Add(R/L): Set a key in set/dictionary or add node to tree
+        Pop(R/L): Remove a key or node
+
+    Fill in Runtime and Memory:
+
+    Data Structure          Get      Add     Delete  Iterate Memory
+    Dictionary (Hash Map)   O(1)     O(1)    O(1)    O(n)    medium
+    Set (Hash Map)          O(1)     O(1)    O(1)    O(n)    medium
+    Binary Search Tree      O(log n) O(n)    O(n)    O(1)    low    Tree                    O(n)     O(1)    O(1)    O(1)    low
+
+        Get: Find an item in the structure
+        Add: Set a key in set/dictionary or add node to tree
+        Delete: Remove a key or node
+        Iterate: Find next item in data structure
+        Memory: Relative to data, how much memory is used? (Choices: a little, medium, or a lot)
+
+Sorting
+
+    1. The Bubble Sort algorithm works by iterating over a list and moving the largest numbers to the end of the list. After the first loop, the highest number will be in the last position; after the second loop, the second highest number will be second from the last position, etc.
+    2. Merge Sort is a divide and conquer algorithm that works by calling a recursive function on an unordered list to divide it into n sublists, each with a list of one item, then comparing numbers in the sublists and combining them together into a new sorted list.
+    3. The Quick Sort algorithm also uses divide and conquer, and operates on the idea of a partition. A quick sort selects a pivot value, and moves all numbers lower than the pivot to the beginning of the list and all numbers bigger than the pivot to the end of the list. The algorithm then recursively applies these steps to each sub group of elements.
+
+Git Branching
+
+    1. Git branching is useful for testing code safely so that you're not working on the mater branch directly.
+    2. A pull request is a way of submitting changes to a project owner, who will review your code and merge it into another branch.
